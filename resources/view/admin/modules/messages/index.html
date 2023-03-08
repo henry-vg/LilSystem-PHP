@@ -1,0 +1,29 @@
+<h1>Messages</h1>
+<p>Messages sent by users.</p>
+
+<hr>
+
+<a href="{{URL}}/admin/messages/new">
+    <button type="button" class="btn btn-success">Register Message</button>
+</a>
+
+<hr>
+
+{{status}}
+
+<table class="table table-light table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th style="width:200px;">Name</th>
+            <th>Message</th>
+            <th>Date</th>
+            <th style="width:200px;">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{items}}
+    </tbody>
+</table>
+
+{{pagination}}
